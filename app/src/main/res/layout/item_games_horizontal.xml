@@ -17,7 +17,7 @@
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintTop_toTopOf="parent"
-         android:text="@string/top_upcoming_text"
+         android:text="@string/most_anticipated_text"
          android:textSize="24sp"/>
 
      <androidx.recyclerview.widget.RecyclerView

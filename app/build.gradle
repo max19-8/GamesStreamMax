@@ -48,10 +48,15 @@ dependencies {
     implementation libs.fragment
     implementation libs.lifecycleViewModel
     implementation libs.lifecycleLiveData
+    implementation libs.coroutines
     kapt libs.lifecycleCompiler
 
     implementation libs.adapterDelegates
     implementation libs.adapterDelegatesViewBinding
+    implementation libs.glide
+    kapt libs.glideCompiler
+
+    implementation project(':core-network') //TODO remove
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
