@@ -1,5 +1,6 @@
 # GamesStreamMax
 Создан один экран приложения, позволяет просмотривать компьютерные игры по категориям.
+
 Dagger2,kotlin coroutines,adapterDelegates,Glide,MVVM
 
 
