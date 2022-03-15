@@ -1,15 +1,16 @@
 package com.example.gamesstreammax.ui.main
 
 import com.example.gamesstreammax.model.base.ListItem
+import com.example.gamesstreammax.repository.model.CategoryType
 import com.example.gamesstreammax.ui.base.BaseDiffUtilItemCallback
 import com.hannesdorfmann.adapterdelegates4.AsyncListDifferDelegationAdapter
 
-class GamesCardsAdapter: AsyncListDifferDelegationAdapter<ListItem>(BaseDiffUtilItemCallback()) {
+class GamesCardsAdapter( onReadyToLoadMore:(Int) -> Unit): AsyncListDifferDelegationAdapter<ListItem>(BaseDiffUtilItemCallback()) {
     init {
         delegatesManager
-            .addDelegate(MainScreenDelegates.wideGameDelegate)
-            .addDelegate(MainScreenDelegates.thinGameDelegate)
-            .addDelegate(MainScreenDelegates.wideProgressDelegate)
-            .addDelegate(MainScreenDelegates.thinProgressDelegate)
+            .addDelegate(MainScreenDelegates.wideGameDelegate(onReadyToLoadMore))
+            .addDelegate(MainScreenDelegates.thinGameDelegate(onReadyToLoadMore))
+            .addDelegate(MainScreenDelegates.wideProgressDelegate())
+            .addDelegate(MainScreenDelegates.thinProgressDelegate())
     }
 }
