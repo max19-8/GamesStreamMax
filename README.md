@@ -4,4 +4,4 @@
 Dagger2,kotlin coroutines,adapterDelegates,Glide,MVVM
 
 
-![image](https://user-images.githubusercontent.com/70865564/158456057-6b574ed1-e689-459e-849f-737cd37f1847.png)
+![video_2022-03-15_23-54-26](https://user-images.githubusercontent.com/70865564/158460832-e88f062c-3c7a-4428-8024-70706f49cab7.gif)
