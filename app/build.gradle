@@ -56,6 +56,10 @@ dependencies {
     implementation libs.glide
     kapt libs.glideCompiler
 
+    implementation libs.dagger
+    kapt libs.daggerCompiler
+    implementation libs.timber
+
     implementation project(':core-network') //TODO remove
 
     testImplementation 'junit:junit:4.13.2'

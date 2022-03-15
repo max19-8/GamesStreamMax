@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -39,5 +40,8 @@ dependencies {
     implementation libs.retrofit
     implementation libs.retrofitGsonConverter
     implementation libs.okhttpLogingInterceptor
+    api libs.dagger
+    kapt libs.daggerCompiler
+
 
 }
