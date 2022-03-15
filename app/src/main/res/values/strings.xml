@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">GamesStreamMax</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="most_anticipated_text">The most anticipated</string>
+    <string name="latest_releases_text">Latest releases</string>
+    <string name="most_rated_in_2022_text">Most rated in 2022</string>
 </resources>
